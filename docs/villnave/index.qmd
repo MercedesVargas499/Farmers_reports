@@ -343,7 +343,7 @@ knitr::kable(summary_df, align = c("l","c","c","c","c"))
 ## 🌾 Corn Yield {#yield}
 
 ::: {.page-intro}
-The map below shows the **corn yield spatial distribution** across Field 3, displayed in quantiles (red = lower yield zones, green = higher yield zones). The blue line marks the field boundary and the dashed line separates the two sub-fields. A full statistical comparison between Control and Treatment strips will be added once the yield data CSV is available.
+The map below shows the **corn yield spatial distribution** across Field 3, displayed in quantiles. The blue line marks the field boundary and the dashed line separates the two sub-fields.
 :::
 
 ```{=html}
@@ -356,13 +356,7 @@ The map below shows the **corn yield spatial distribution** across Field 3, disp
     onerror="this.style.display='none'"
   />
   <figcaption style="font-size: 0.82rem; color: #6b7280; margin-top: 8px;">
-    <strong>Figure 2.</strong> Corn yield map — Villnave Field 3, 2025 season.
-    Color scale in quantiles:
-    <span style="background:#d73027; color:#fff; border-radius:4px; padding:1px 7px; font-size:0.78rem; margin-left:4px;">■ Low yield</span>
-    <span style="background:#f46d43; color:#fff; border-radius:4px; padding:1px 7px; font-size:0.78rem; margin-left:2px;">■</span>
-    <span style="background:#fdae61; color:#fff; border-radius:4px; padding:1px 7px; font-size:0.78rem; margin-left:2px;">■</span>
-    <span style="background:#a6d96a; color:#fff; border-radius:4px; padding:1px 7px; font-size:0.78rem; margin-left:2px;">■</span>
-    <span style="background:#1a9641; color:#fff; border-radius:4px; padding:1px 7px; font-size:0.78rem; margin-left:2px;">■ High yield</span>
+    <strong>Figure 2.</strong> Corn yield map.
   </figcaption>
 </figure>
 
@@ -375,6 +369,10 @@ The map below shows the **corn yield spatial distribution** across Field 3, disp
 ---
 
 ## 🌿 Nitrogen Balance Index (NBI) {#nbi-details}
+
+::: {.page-intro}
+The **Nitrogen Balance Index (NBI)** is measured with the Dualex sensor and reflects the ratio of chlorophyll to flavonoids in the leaf. A higher NBI indicates better nitrogen status, the plant has enough N to build chlorophyll without accumulating excess flavonoids as a stress response. Two leaves per plant were measured and averaged. Results are compared between Control and Treatment strips using a two-sample t-test.
+:::
 
 ```{r nbi-cards, echo=FALSE}
 section_cards(m_cover_nbi, m_ctrl_nbi, delta_nbi, pct_nbi, p_nbi,
@@ -426,6 +424,10 @@ ggplotly(p) |> layout(showlegend=FALSE)
 ---
 
 ## 🍃 Chlorophyll (Chl) {#chl-details}
+
+::: {.page-intro}
+The **Chlorophyll Index (Chl)** is also measured with the Dualex sensor and estimates the amount of chlorophyll in the leaf. Chlorophyll is directly linked to the plant's capacity for photosynthesis and is a reliable proxy for nitrogen sufficiency. Higher values indicate greener, more nitrogen-sufficient leaves. As with NBI, two leaves per plant were averaged and treatments compared with a t-test.
+:::
 
 ```{r chl-cards, echo=FALSE}
 section_cards(m_cover_chl, m_ctrl_chl, delta_chl, pct_chl, p_chl,
