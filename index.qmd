@@ -340,40 +340,6 @@ knitr::kable(summary_df, align = c("l","c","c","c","c"))
 
 ---
 
-## 🌾 Corn Yield {#yield}
-
-::: {.page-intro}
-The map below shows the **corn yield spatial distribution** across Field 3, displayed in quantiles (red = lower yield zones, green = higher yield zones). The blue line marks the field boundary and the dashed line separates the two sub-fields. A full statistical comparison between Control and Treatment strips will be added once the yield data CSV is available.
-:::
-
-```{=html}
-<figure style="margin: 20px 0; text-align: center;">
-  <img
-    src="images/villnave_yield.png"
-    alt="Villnave Field 3 — Corn yield map"
-    style="max-width: 100%; border-radius: 8px; border: 1px solid #e5e7eb;
-           box-shadow: 0 2px 8px rgba(0,0,0,0.07);"
-    onerror="this.style.display='none'"
-  />
-  <figcaption style="font-size: 0.82rem; color: #6b7280; margin-top: 8px;">
-    <strong>Figure 2.</strong> Corn yield map — Villnave Field 3, 2025 season.
-    Color scale in quantiles:
-    <span style="background:#d73027; color:#fff; border-radius:4px; padding:1px 7px; font-size:0.78rem; margin-left:4px;">■ Low yield</span>
-    <span style="background:#f46d43; color:#fff; border-radius:4px; padding:1px 7px; font-size:0.78rem; margin-left:2px;">■</span>
-    <span style="background:#fdae61; color:#fff; border-radius:4px; padding:1px 7px; font-size:0.78rem; margin-left:2px;">■</span>
-    <span style="background:#a6d96a; color:#fff; border-radius:4px; padding:1px 7px; font-size:0.78rem; margin-left:2px;">■</span>
-    <span style="background:#1a9641; color:#fff; border-radius:4px; padding:1px 7px; font-size:0.78rem; margin-left:2px;">■ High yield</span>
-  </figcaption>
-</figure>
-
-<div style="background:#fff8e1; border:1px solid #F9C74F; border-left:6px solid #F9C74F;
-            border-radius:8px; padding:12px 16px; font-size:0.88rem; color:#555; margin-bottom:8px;">
-  📊 <strong>Coming soon:</strong> yield summary statistics and Control vs Treatment comparison charts will be added once the yield CSV data is available.
-</div>
-```
-
----
-
 ## 🌿 Nitrogen Balance Index (NBI) {#nbi-details}
 
 ```{r nbi-cards, echo=FALSE}
