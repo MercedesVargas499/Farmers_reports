@@ -481,7 +481,7 @@ ggplotly(p) |> layout(showlegend=FALSE)
 ## 🧪 C:N in Corn Biomass {#cn-details}
 
 ::: {.page-intro}
-Corn biomass was collected at the V6 stage and sent for laboratory C:N analysis. This measures the actual nitrogen concentration in the plant tissue — a direct indicator of how much N the plant was able to take up. **Note:** sample sizes are small (n = `r n_nocover_cn` Control, n = `r n_cover_cn` Treatment), so results are descriptive. Effect sizes (Cohen's d) are reported instead of p-values.
+Corn biomass was collected at the V6 stage and sent for laboratory C:N analysis. This measures the actual nitrogen concentration in the plant tissue, a direct indicator of how much N the plant was able to take up. **Note:** sample sizes are small (n = `r n_nocover_cn` Control, n = `r n_cover_cn` Treatment), so results are descriptive. Effect sizes (Cohen's d) are reported instead of p-values.
 :::
 
 ### Total Nitrogen in Biomass (%N)
@@ -672,7 +672,7 @@ ggplotly(p_csnt) |> layout(showlegend = FALSE)
 ## 🌱 Soil Health Assessment {#soilhealth}
 
 ::: {.page-intro}
-Soil health was assessed using the **Cornell Soil Health Test** (sampled 06/11/2025, Field 3). The overall quality score was **69/100 (High)**. Key constraints identified were **Soil Respiration** (score 16 — Very Low) and **Active Carbon** (score 34 — Low), both indicating that soil microbial activity and available carbon could be improved. Physical indicators were generally good, with strong scores for Available Water Capacity (87) and Surface Hardness (75).
+Soil health was assessed using the **Cornell Soil Health Test** (sampled 06/11/2025, Field 3). The overall quality score was **69/100 (High)**. Key constraints identified were **Soil Respiration** (score 16-Very Low) and **Active Carbon** (score 34-Low), both indicating that soil microbial activity and available carbon could be improved. Physical indicators were generally good, with strong scores for Available Water Capacity (87) and Surface Hardness (75).
 :::
 
 ```{=html}
@@ -766,4 +766,5 @@ HTML(paste0('
 </div>
 '))
 ```
+
 
